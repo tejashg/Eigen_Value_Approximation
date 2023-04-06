@@ -7,7 +7,11 @@ const app = express();
 const options = {
 origin: 'https://eigen-value-approximation.vercel.app',
 }
-app.use(cors(options))
+app.use(cors());
+app.use(function(req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', 'https://eigen-value-approximation.vercel.app');
+  next();
+});
 app.use(bodyParser.json());
 
 const output = (input, res) => {
