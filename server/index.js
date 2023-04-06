@@ -4,9 +4,7 @@ const cors = require("cors");
 const { spawn } = require('child_process');
 
 const app = express();
-const options = {
-origin: 'https://eigen-value-approximation.vercel.app',
-}
+
 app.use(cors());
 app.use(function(req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', 'https://eigen-value-approximation.vercel.app');
