@@ -1,0 +1,133 @@
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: calc(100vh - 17.6px); */
+    background-color: #f2f2f2;
+}
+
+.app-content {
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.algorithm-label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.algorithm-select {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.matrix-size-label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.matrix-size-input {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.matrix-input-desc {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.matrix-container {
+    margin-bottom: 20px;
+}
+
+.matrix-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.max-iterations-label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.max-iterations-input {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.precision-label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.precision-input {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.calculate-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    background-color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.calculate-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
