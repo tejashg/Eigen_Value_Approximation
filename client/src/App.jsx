@@ -56,6 +56,7 @@ function App() {
 
     fetch(import.meta.env.VITE_BACKEND_URL, {
       method: "POST",
+      mode: 'no-cors',
       headers: {
         "Content-Type": "application/json",
       },
