@@ -43,7 +43,7 @@ const output = (input, res) => {
   });
 }
 
-app.post('/api/matrix', async (req, res) => {
+app.post('/', async (req, res) => {
   const { size, data, maxIterations, precision, algorithm } = req.body;
 
   const input = [[size], ...data, [precision], [maxIterations], [algorithm]]
