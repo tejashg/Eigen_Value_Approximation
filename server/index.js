@@ -43,7 +43,7 @@ const output = (input, res) => {
   });
 }
 
-app.post('/api/matrix', async (req, res) => {
+app.post('/', async (req, res) => {
   const { size, data, maxIterations, precision, algorithm } = req.body;
 
   const input = [[size], ...data, [precision], [maxIterations], [algorithm]]
@@ -51,7 +51,7 @@ app.post('/api/matrix', async (req, res) => {
   output(input, res)
 });
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
