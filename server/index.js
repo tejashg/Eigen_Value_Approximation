@@ -12,7 +12,7 @@ const output = (input, res) => {
   let method = input.pop();
   let executablePath = '';
   if (method[0] == 'power') {
-    executablePath = './computation/Power_Method.exe';
+    executablePath = '/opt/render/project/src/server/computation/Power_Method.exe';
   }
   else {
     executablePath = './computation/QR_Algorithm.exe';
