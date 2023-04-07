@@ -12,10 +12,10 @@ const output = (input, res) => {
   let method = input.pop();
   let executablePath = '';
   if (method[0] == 'power') {
-    executablePath = '../computation/Power_Method.exe';
+    executablePath = './computation/Power_Method.exe';
   }
   else {
-    executablePath = '../computation/QR_Algorithm.exe';
+    executablePath = './computation/QR_Algorithm.exe';
   }
 
   // Arguments to pass to the executable file
