@@ -4,7 +4,12 @@ const cors = require("cors");
 const { spawn } = require('child_process');
 
 const app = express();
+
 app.use(cors());
+app.use(function(req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', 'https://eigen-value-approximation.vercel.app');
+  next();
+});
 app.use(bodyParser.json());
 
 const output = (input, res) => {
